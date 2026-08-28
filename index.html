@@ -6,7 +6,8 @@
     <title>Poppy's Bank</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
   <body class="bg-info">
     <nav class="navbar navbar-expand-lg py-3 bg-white" >
         <div class="container">
@@ -24,6 +25,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+    <a class="nav-link text-primary-emphasis" href="#">
+        <i class="bi bi-search"></i>
+    </a>
+</li>
             <li class="nav-item">
                 <a  class="nav-link text-primary-emphasis" href="#">Home</a>
             </li>
@@ -35,7 +42,7 @@
             </li>
 
             <li>
-                <a class="nav-link text-primary-emphasis" href="#">Products</a>
+                <a class="nav-link text-primary-emphasis" href="#products">Products</a>
             </li>
 
             <li>
@@ -57,44 +64,157 @@
                     Your Financial Future starts here.simple banking made for you.Save more,spend wisely,Grow your money.Securre banking you can trust We make managing your money easy and secure. Enjoy convenient banking services.</p>
                 <button class="btn btn-primary ">Get started</button>
                 </div>
+<div class="col-lg-6 p-0">
+    <div id="bankcarousel" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="col-lg-6 p-0">
-                    <div id="bankcarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button"
-                            data-bs-target="#bankcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#bankcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#bankcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images\buildings.jpg " class="d-block w-100" alt="bankimage">
-                                <div class="carousel-caption">
-                                    <h5>Banking</h5>
-                                    <p>THe headquarters of the banking industry</p>
-                                </div>
-                        </div>
+        <div class="carousel-indicators">
+            <button type="button"
+                data-bs-target="#bankcarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+            </button>
 
-                        <div class="carousel-item">
-                            <img src="images\bank.jpg " class="d-block w-100" alt="bankimage">
-                            <div class="carousel-caption">
-                                <h5>Bank</h5>
-                                <p>Bank with us today</p>
-                        </div>
+            <button type="button"
+                data-bs-target="#bankcarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2">
+            </button>
 
-                        </div>
-                            
+            <button type="button"
+                data-bs-target="#bankcarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
+        </div>
 
-                            <div class="carousel-item">
-                                <img src="images\laptop.jpg " class="d-block w-100" alt="bankimage">
-                                <div class="carousel-caption">
-                                    <h5>Banking</h5>
-                                    <p>You can trust us with youir money</p>
-                                </div>
-                            </div>
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/buildings.jpg" class="d-block w-100" alt="bankimage">
+
+                <div class="carousel-caption">
+                    <h5>Banking</h5>
+                    <p>The headquarters of the banking industry</p>
                 </div>
+            </div>
+
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="images/bank.jpg" class="d-block w-100" alt="bankimage">
+
+                <div class="carousel-caption">
+                    <h5>Bank</h5>
+                    <p>Bank with us today</p>
+                </div>
+            </div>
+
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="images/laptop.jpg" class="d-block w-100" alt="bankimage">
+
+                <div class="carousel-caption">
+                    <h5>Banking</h5>
+                    <p>You can trust us with your money</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#bankcarousel"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+
+        </button>
+
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#bankcarousel"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+
+        </button>
+
     </div>
-          </div>
+</div>
+                    
+            
+    </div>
+    
+
+
+          
+    </section>
+
+    <section class="container my-5"id="products">
+        <h2 class="text-center mb-4">Our Banking <span class="text-primary">Services</span></h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-secondary h-100">
+                    <img src="images\bank.jpg"alt=bank >
+                    <div class="card-body">
+                        <h5 class="card-title">Savings Account</h5>
+                        <p class="card-text">Save your money securely and watch your savings grow</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                
+                    </div>
+
+                </div>
+              
+            <div class="col-md-3">
+                <div class="card border-secondary h-100">
+                    <img src="images\buildings.jpg"alt=bank >
+                    <div class="card-body">
+                        <h5 class="card-title">Current Account</h5>
+                        <p class="card-text">Enjoy Easy and convenient banking for your everyday needs</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                
+                    </div>
+
+                </div>
+                
+                 <div class="col-md-3">
+                <div class="card border-secondary h-100">
+                    <img src="images\buildings.jpg"alt=bank >
+                    <div class="card-body">
+                        <h5 class="card-title">Loans</h5>
+                        <p class="card-text">Get Financial Support to help achieve your goals</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                
+                    </div>
+
+                </div>
+
+                 <div class="col-md-3">
+                <div class="card border-secondary h-100">
+                    <img src="images\buildings.jpg"alt=bank >
+                    <div class="card-body">
+                        <h5 class="card-title">Debit Cards</h5>
+                        <p class="card-text">Make Secure Payments and acesss your money whenver you need it</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                
+                    </div>
+
+                </div>
     </section>
    
     
